@@ -1,0 +1,8 @@
+Tujuan: Pengujian dilakukan untuk memastikan website Perubahan Iklim tampil dan berfungsi dengan baik di berbagai kondisi
+
+Kategori:
+-Tampilan:
+1. Kalau halaman dibuka, judul, header, dan semua section (Penyebab, Dampak, Solusi) harus tampil dengan warna hijau sesuai tema
+
+fungsi
+1. Kalau kursor diarahkan ke section, warna background akan  berubah halus  sesuai animasi yang dibuat
