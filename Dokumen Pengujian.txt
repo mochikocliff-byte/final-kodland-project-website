@@ -1,0 +1,10 @@
+Tujuan: Pengujian dilakukan untuk memastikan website Perubahan Iklim tampil dan berfungsi dengan baik di berbagai kondisi
+
+Kategori:
+-Tampilan:
+1. Kalau halaman dibuka, judul, header, dan semua section (Penyebab, Dampak, Solusi) harus tampil dengan warna hijau sesuai tema
+2. Kalau ukuran layar diperkecil (HP/tablet), tampilan harus tetap rapi dan teks tidak terpotong
+
+-Fungsi:
+1. Kalau kursor diarahkan ke section, warna background harus berubah halus (transition) sesuai animasi yang dibuat
+2. Kalau file style.css tidak termuat, website harus tetap bisa dibaca isinya walau tanpa warna
