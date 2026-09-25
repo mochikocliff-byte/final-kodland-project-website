@@ -4,22 +4,40 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Perubahan Iklim</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}" />
   </head>
   <body>
-    <header>
-      <h1>🌍 Perubahan Iklim</h1>
-      <p>Memahami penyebab, dampak, dan cara kita bisa membantu bumi.</p>
+    <header class="hero">
+      <div class="hero-inner">
+        <span class="eyebrow">Edukasi Lingkungan</span>
+        <h1>Perubahan Iklim</h1>
+        <p>Memahami penyebab, dampak, dan cara kita bisa membantu bumi.</p>
+        <nav class="hero-nav">
+          <a href="#penyebab">Penyebab</a>
+          <a href="#dampak">Dampak</a>
+          <a href="#solusi">Solusi</a>
+          <a href="#tanya">Tanya Jawab</a>
+        </nav>
+      </div>
     </header>
 
     <main>
-      <section id="penyebab">
-        <h2>🔥 Penyebab Perubahan Iklim</h2>
+      <section id="penyebab" class="card">
+        <div class="card-head">
+          <span class="badge">01</span>
+          <h2>Penyebab Perubahan Iklim</h2>
+        </div>
         <p>
           Perubahan iklim terjadi karena peningkatan gas rumah kaca di atmosfer
           akibat aktivitas manusia. Beberapa penyebab utamanya adalah:
         </p>
-        <ul>
+        <ul class="list">
           <li>Pembakaran bahan bakar fosil (batu bara, minyak, gas)</li>
           <li>Penebangan hutan secara besar-besaran</li>
           <li>Limbah industri dan asap kendaraan</li>
@@ -27,34 +45,42 @@
         </ul>
       </section>
 
-      <section id="dampak">
-        <h2>⚠️ Dampak yang Sudah Terlihat</h2>
-        <ul>
-          <li>Suhu bumi terus naik 🌡️</li>
-          <li>Permukaan air laut meningkat 🌊</li>
-          <li>Cuaca ekstrem lebih sering terjadi ⛈️</li>
-          <li>Es di kutub mencair 🧊</li>
+      <section id="dampak" class="card">
+        <div class="card-head">
+          <span class="badge">02</span>
+          <h2>Dampak yang Sudah Terlihat</h2>
+        </div>
+        <ul class="list">
+          <li>Suhu bumi terus naik</li>
+          <li>Permukaan air laut meningkat</li>
+          <li>Cuaca ekstrem lebih sering terjadi</li>
+          <li>Es di kutub mencair</li>
         </ul>
       </section>
 
-      <section id="solusi">
-        <h2>💡 Apa yang Bisa Kita Lakukan?</h2>
+      <section id="solusi" class="card">
+        <div class="card-head">
+          <span class="badge">03</span>
+          <h2>Apa yang Bisa Kita Lakukan?</h2>
+        </div>
         <p>Setiap orang bisa membantu memperlambat perubahan iklim, contohnya:</p>
-        <ol>
-          <li>Menghemat energi listrik di rumah ⚡</li>
-          <li>Menggunakan transportasi umum atau sepeda 🚴</li>
-          <li>Mengurangi sampah plastik sekali pakai ♻️</li>
-          <li>Menanam dan merawat pohon 🌱</li>
+        <ol class="list">
+          <li>Menghemat energi listrik di rumah</li>
+          <li>Menggunakan transportasi umum atau sepeda</li>
+          <li>Mengurangi sampah plastik sekali pakai</li>
+          <li>Menanam dan merawat pohon</li>
         </ol>
       </section>
 
-      <!-- Chat Section -->
-      <section id="tanya" class="chat-section">
-        <h2>🤖 Tanya Tentang Iklim</h2>
+      <section id="tanya" class="card chat-section">
+        <div class="card-head">
+          <span class="badge">04</span>
+          <h2>Tanya Tentang Iklim</h2>
+        </div>
         <p>Ada pertanyaan? Tanya ke chatbot kami!</p>
 
         <div class="contoh-pertanyaan">
-          <p><strong>Contoh pertanyaan:</strong></p>
+          <p class="contoh-label">Contoh pertanyaan</p>
           <ul>
             <li>Apa penyebab perubahan iklim?</li>
             <li>Apa dampak perubahan iklim?</li>
@@ -67,7 +93,7 @@
 
         <form method="POST" action="#tanya" class="chat-form">
           <div class="form-group">
-            <label for="pertanyaan">Ketik Pertanyaan:</label>
+            <label for="pertanyaan">Ketik Pertanyaan</label>
             <input
               type="text"
               id="pertanyaan"
@@ -76,12 +102,12 @@
               required
             />
           </div>
-          <button type="submit" class="btn-submit">🔍 Tanya</button>
+          <button type="submit" class="btn-submit">Tanya</button>
         </form>
 
         {% if jawaban %}
         <div class="jawaban-box">
-          <h3>💡 Jawaban Chatbot:</h3>
+          <h3>Jawaban Chatbot</h3>
           <p>{{ jawaban }}</p>
         </div>
         {% endif %}
@@ -89,7 +115,7 @@
     </main>
 
     <footer>
-      <p>&copy; 2026 Edukasi Perubahan Iklim | Bersama Selamatkan Bumi 🌎</p>
+      <p>&copy; 2026 Edukasi Perubahan Iklim &middot; Bersama Selamatkan Bumi</p>
     </footer>
   </body>
 </html>
